@@ -7,12 +7,16 @@
 body {
     background-image: linear-gradient(120deg, #f6d365, #fda085);
     color: white;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Assistant', sans-serif;
     min-height: 100vh;
 }
 
+h1 {
+    font-family: 'Rubik Puddles', cursive;
+}
+
 header {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 header, form {
@@ -30,15 +34,14 @@ form input, form button {
 }
 
 form button {
-    color: #fda085;
+    color: rgba(253, 160, 133, 0.35);
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover {
-    background: #fda085;
-    color: white;
+    color: rgba(253, 160, 133, 1);
 }
 
 .todo-container {
@@ -50,6 +53,7 @@ form button:hover {
 .todo-list {
     min-width: 30%;
     list-style: none;
+    
 }
 
 .todo {
@@ -60,6 +64,7 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0.35rem 0.35rem 1rem rgb(198, 123, 102);
     transition: all 0.5s ease;
 }
 
@@ -113,7 +118,7 @@ select {
 }
 
 select {
-    color: #ff6f47;
+    color: rgb(253, 150, 133);
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
@@ -122,7 +127,7 @@ select {
 .select::after {
     content: '\25BC';
     position: absolute;
-    background: #ff6f47;
+    color: rgba(253, 160, 133, 0.35);
     top: 0;
     right: 0;
     padding: 1rem;
@@ -132,5 +137,5 @@ select {
 
 .select:hover::after {
     background: white;
-    color: #ff6f47;
+    color: rgba(253, 160, 133, 1);
 }
